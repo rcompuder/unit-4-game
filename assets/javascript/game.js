@@ -12,7 +12,6 @@ var wins = 0;
 var losses =0;
 var gameReset = false;
 
-// Crystal image click funcions
 $("#first-crystal").on("click", function(){
     clickFunction(redCrystalNumber); 
 });
