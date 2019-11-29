@@ -6,26 +6,24 @@ var purpleCrystalNumber = Math.floor(Math.random()*4 + 1);
 randomNumber = Math.floor(Math.random()*99);
 $("#random-number-box").html("<h2>Random Number: " + randomNumber + "</h2>");
 
-// setup global variables
 var totalScore = 0;
 var wins = 0;
 var losses =0;
 var gameReset = false;
 
-$("#first-crystal").on("click", function(){
+$("#red-crystal").on("click", function(){
     clickFunction(redCrystalNumber); 
 });
-$("#second-crystal").on("click", function(){
+$("#blue-crystal").on("click", function(){
     clickFunction(blueCrystalNumber);
 });
-$("#third-crystal").on("click", function(){
+$("#green-crystal").on("click", function(){
     clickFunction(greenCrystalNumber);
 });
-$("#fourth-crystal").on("click", function(){
+$("#purple-crystal").on("click", function(){
     clickFunction(purpleCrystalNumber);
 });
 
-// Execute Click Function
 function clickFunction(crystalNumber){
     if (gameReset) {
         randomNumber = Math.floor(Math.random()*99);
